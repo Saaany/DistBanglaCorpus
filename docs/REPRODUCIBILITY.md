@@ -74,7 +74,3 @@ This document records the configuration corresponding to the final DistBanglaCor
 | Total | ~25.6 hr |
 
 Runtime depends on Dataproc image revision, GCS throughput, cluster contention, and corpus location.
-
-## Code/paper alignment note
-
-The current parser implementation uses Hadoop `TextInputFormat` through `newAPIHadoopFile` so that files are streamed line-by-line. If the paper text still states that the final parser used `binaryFiles()`, update the paper or tag the exact historical implementation used for the published experiment. A reproducibility release should not claim an ingestion method different from the released code.
