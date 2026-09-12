@@ -1,0 +1,13 @@
+{
+    "documents_before_exact_deduplication": 9951200,
+    "documents_after_exact_deduplication": 9951200,
+    "exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "method": "shingle_fingerprinting",
+    "shingle_size": 8,
+    "docs_with_enough_tokens": 8322960,
+    "near_duplicate_clusters": 1417757,
+    "near_duplicate_documents": 2049107,
+    "near_duplicate_rate": 0.2462,
+    "note": "Near-duplicates detected by identical leading-8-token shingles. Captures copy-pasted news articles and republished content across domains."
+}

@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Syntax-check Python scripts
+        run: python -m py_compile scripts/*.py
+      - name: Validate JSON configuration
+        run: python -m json.tool config/config.example.json > /dev/null
+      - name: Check required resources
+        run: |
+          test -s resources/domain/bangla_stopwords.txt
+          test -s resources/domain/lexicons/news.txt
+          test -s resources/bias/male_markers.txt
+          test -s resources/bias/female_markers.txt
+          test -s resources/bias/occupation_markers.txt

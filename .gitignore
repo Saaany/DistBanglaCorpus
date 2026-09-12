@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local configuration
+config/config.json
+
+# Raw / intermediate corpus data
+corpus/
+*.parquet
+*.snappy.parquet
+
+# Local outputs and models
+outputs/
+models/
+
+# Credentials / cloud keys
+*.json.key
+*service-account*.json
+credentials*.json
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz

@@ -1,0 +1,32 @@
+{
+  "paths": {
+    "parsed_corpus": "corpus/parsed/",
+    "labelled_corpus": "corpus/labelled/",
+    "lexicon_dir": "domain_resources/lexicons/",
+    "stopwords": "domain_resources/bangla_stopwords.txt",
+    "output": "output/",
+    "models": "models/"
+  },
+  "sampling": {
+    "vocabulary": 0.1,
+    "lda": 0.2
+  },
+  "duplicate_detection": {
+    "method": "leading_token_shingle",
+    "shingle_size": 8,
+    "min_tokens": 8
+  },
+  "lda": {
+    "topics": 20,
+    "max_iterations": 20,
+    "vocabulary_size": 50000,
+    "min_df": 5,
+    "optimizer": "online"
+  },
+  "spark": {
+    "executor_memory": "10g",
+    "driver_memory": "4g",
+    "executor_cores": 2,
+    "shuffle_partitions": 800
+  }
+}

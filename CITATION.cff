@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "DistBanglaCorpus: A Distributed Big Data Analytics Framework for Large-Scale Linguistic, Domain, and Bias Analysis of Bangla Web Corpus"
+message: "If you use this software, please cite the accompanying DistBanglaCorpus paper."
+type: software
+authors:
+  - family-names: Sany
+    given-names: Al-Amin
+  - family-names: Saiem
+    given-names: Bijoy Ahmed
+  - family-names: Adnan
+    given-names: Abdullah
+version: 1.0.0
+date-released: 2026-09-12
+repository-code: "https://github.com/YOUR_GITHUB_USERNAME/DistBanglaCorpus"

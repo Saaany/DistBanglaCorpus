@@ -1,0 +1,3 @@
+# Dataproc provides Spark/PySpark at runtime.
+# This pin is for local development/syntax-compatible Spark testing.
+pyspark==3.3.2

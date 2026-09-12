@@ -1,0 +1,15 @@
+{
+    "application_id": "application_1785388068515_0004",
+    "spark_master": "yarn",
+    "parallelism": 8,
+    "executors": 5,
+    "executor_memory": "10g",
+    "driver_memory": "4g",
+    "shuffle_partitions": "800",
+    "documents": 9951200,
+    "domains": 7,
+    "tokens": 1767383888,
+    "characters": 11391198743,
+    "lda_log_perplexity": 8.5311,
+    "benchmark_time_seconds": 29442.26
+}
